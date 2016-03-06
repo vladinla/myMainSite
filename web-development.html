@@ -35,7 +35,7 @@
 				<!-- Main -->
                 <section id="main" class="wrapper">
                     <div class="inner">
-                        <h1 class="major">About</h1>
+                        <h1 class="major">My Extertise in Web Development, Web Design and WordPress</h1>
                         <img src="images/vlad.png" style="border-radius:50%" width="200" alt="vladislav-golovin" />
                         <br />
                         <br />
@@ -60,106 +60,118 @@
                                 <li><img src="images/linkedin11.jpg" /></li>
                             </ul>
                             <!--<span class="button prevButton"></span>
-        <span class="button nextButton"></span>-->
+                <span class="button nextButton"></span>-->
                         </div>
                         </center>
 
                         <script src="scripts/jquery-1.4.2.min.js"></script>
 
                         <script>
-$(window).load(function(){
-		var pages = $('#container li'), current=0;
-		var currentPage,nextPage;
-		var timeoutID;
-		var buttonClicked=0;
+                            $(window).load(function () {
+                                var pages = $('#container li'), current = 0;
+                                var currentPage, nextPage;
+                                var timeoutID;
+                                var buttonClicked = 0;
 
-		var handler1=function(){
-			buttonClicked=1;
-			$('#container .button').unbind('click');
-			currentPage= pages.eq(current);
-			if($(this).hasClass('prevButton'))
-			{
-				if (current <= 0)
-					current=pages.length-1;
-					else
-					current=current-1;
-			}
-			else
-			{
+                                var handler1 = function () {
+                                    buttonClicked = 1;
+                                    $('#container .button').unbind('click');
+                                    currentPage = pages.eq(current);
+                                    if ($(this).hasClass('prevButton')) {
+                                        if (current <= 0)
+                                            current = pages.length - 1;
+                                        else
+                                            current = current - 1;
+                                    }
+                                    else {
 
-				if (current >= pages.length-1)
-					current=0;
-				else
-					current=current+1;
-			}
-			nextPage = pages.eq(current);
-			currentPage.fadeTo('slow',0.3,function(){
-				nextPage.fadeIn('slow',function(){
-					nextPage.css("opacity",1);
-					currentPage.hide();
-					currentPage.css("opacity",1);
-					$('#container .button').bind('click',handler1);
-				});
-			});
-		}
+                                        if (current >= pages.length - 1)
+                                            current = 0;
+                                        else
+                                            current = current + 1;
+                                    }
+                                    nextPage = pages.eq(current);
+                                    currentPage.fadeTo('slow', 0.3, function () {
+                                        nextPage.fadeIn('slow', function () {
+                                            nextPage.css("opacity", 1);
+                                            currentPage.hide();
+                                            currentPage.css("opacity", 1);
+                                            $('#container .button').bind('click', handler1);
+                                        });
+                                    });
+                                }
 
-		var handler2=function(){
-			if (buttonClicked==0)
-			{
-			$('#container .button').unbind('click');
-			currentPage= pages.eq(current);
-			if (current >= pages.length-1)
-				current=0;
-			else
-				current=current+1;
-			nextPage = pages.eq(current);
-			currentPage.fadeTo('slow',0.3,function(){
-				nextPage.fadeIn('slow',function(){
-					nextPage.css("opacity",1);
-					currentPage.hide();
-					currentPage.css("opacity",1);
-					$('#container .button').bind('click',handler1);
-				});
-			});
-			timeoutID=setTimeout(function(){
-				handler2();
-			}, 4000);
-			}
-		}
+                                var handler2 = function () {
+                                    if (buttonClicked == 0) {
+                                        $('#container .button').unbind('click');
+                                        currentPage = pages.eq(current);
+                                        if (current >= pages.length - 1)
+                                            current = 0;
+                                        else
+                                            current = current + 1;
+                                        nextPage = pages.eq(current);
+                                        currentPage.fadeTo('slow', 0.3, function () {
+                                            nextPage.fadeIn('slow', function () {
+                                                nextPage.css("opacity", 1);
+                                                currentPage.hide();
+                                                currentPage.css("opacity", 1);
+                                                $('#container .button').bind('click', handler1);
+                                            });
+                                        });
+                                        timeoutID = setTimeout(function () {
+                                            handler2();
+                                        }, 4000);
+                                    }
+                                }
 
-		//$('#container .button').click(function(){
-		//	clearTimeout(timeoutID);
-		//	handler1();
-		//});
+                                //$('#container .button').click(function(){
+                                //	clearTimeout(timeoutID);
+                                //	handler1();
+                                //});
 
-		timeoutID=setTimeout(function(){
-			handler2();
-			}, 4000);
+                                timeoutID = setTimeout(function () {
+                                    handler2();
+                                }, 4000);
 
-});
+                            });
                         </script>
 
 
                         <!--End of slider code!-->
 
-                        
-                            <p>With a variety of experiences in multiple sectors, I am good at marketing, sales and strategy. Have a solid experience working with Salesforce CRM, Pipeliner CRM, MS Office, Google Products and SaaS tools.</p>
-                            <p>In addition to strong expertise in traditional methods and channels, I am also good at web development, online marketing, SEO, social media marketing and omni-channel strategies.
 
-                            <p>Basically, I can design and execute effective marketing and business development strategies (for targeted products, services and markets) that produce results, both domestically and internationally. I'm equally effective in established, start-up and transitional environments. Both ONline and OFFline.
-
-                            <p>Strong cross-functional expertise:
-                            Management || Complex Sales || Marketing || Business Development || Business Consulting || Strategy || Project Management || Cross-functional teams</p>
-
-                            I'm passionate about effective systems in general and CRM in particular (Salesforce CRM).
-
-                            Global Expertise: I worked in the USA, Japan, Russia, UAE, United Kingdom, South East Asia and Liechtenstein. I speak fluent English, Russian and Japanese.
-
+                        <p>
+                            I love building awesome websites, blogs and CMS (Content Management System) that help companies deliver its brand, products and services in a powerful way.
+                            <br />
+                            <br />
+                            I realize that website is a part of the overall business strategy. It should look great. It should be easy to use and maintain. And it should perform well in the search engines (organic traffic is free after all :)
+                            <br />
+                            <br />
+                            That's why whenever I create a website, blog or CMS I always take into consideration your overall  <a href="online-marketing-seo.html">online marketing strategy and SEO.</a>
                         </p>
-                        <div class="map">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=zAhOrUExyvi8.k4i-hx4-c6mc" width="900" height="600"></iframe>
-                        </div>
 
+                        <h2>Web Development and Web Design</h2>
+
+                        Depending on the clients requirements and the overall web strategy, I build websites and blogs either with:
+                        <br />
+                        - a nice mix of HTML, CSS and JavaScript (just like <a href="http://vladislav.co/">this website</a>)
+                        <br />
+                        - or with WordPress
+                        <br />
+                        <br />
+                       These two sites were built just to run (successful) SEO experiments:
+                        <br />
+                        <a href="http://awesomephotography.xyz/">http://awesomephotography.xyz/</a>  >>>  more than 23000 pages indexed
+                        <br />
+                        <a href="http://it-training.xyz/">http://it-training.xyz/</a>  >>>  more than 49000 pages indexed
+                        <p></p>
+
+                        <h2>WordPress CMS</h2>
+                        WordPress is the perfect CMS (Content Management System). Your website will look great and will be easy to update.
+                        <br />
+                        WordPress is perfect choice when you want to have a blog on top of the "main" website. For example, <a href="http://vladislav.co/blog/">my new blog</a> is build on WordPress.
+                        <p></p>
+                        <strong style="color:yellow">Please get in touch to discuss your successful online project!</strong>
                     </div>
                 </section>
 
