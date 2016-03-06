@@ -1,0 +1,264 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Online Marketing, SEO and Social Media</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+				<a href="index.html" class="title">vladislav golovin</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#value" class="active">What I Do</a></li>
+                        <li><a href="http://vladislav.co/blog" class="active" target="_blank">Blog</a></li>
+						<li><a href="about.html" class="active">About Me</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+                <section id="main" class="wrapper">
+                    <div class="inner">
+                        <h1 class="major">My Expertise in Online Marketing, SEO and Social Media</h1>
+                        <img src="images/vlad.png" style="border-radius:50%" width="200" alt="vladislav-golovin" />
+                        <br />
+                        <br />
+                        <a href="https://www.linkedin.com/in/golovin">LinkedIn Recommendations:</a>
+
+                        <!--Here comes the slider :)-->
+                        <br />
+                        <br />
+                        <div id="container">
+
+                            <ul>
+                                <li><img src="images/linkedin1.jpg" /></li>
+                                <li><img src="images/linkedin2.jpg" /></li>
+                                <li><img src="images/linkedin3.jpg" /></li>
+                                <li><img src="images/linkedin4.jpg" /></li>
+                                <li><img src="images/linkedin5.jpg" /></li>
+                                <li><img src="images/linkedin6.jpg" /></li>
+                                <li><img src="images/linkedin7.jpg" /></li>
+                                <li><img src="images/linkedin8.jpg" /></li>
+                                <li><img src="images/linkedin9.jpg" /></li>
+                                <li><img src="images/linkedin10.jpg" /></li>
+                                <li><img src="images/linkedin11.jpg" /></li>
+                            </ul>
+                            <!--<span class="button prevButton"></span>
+                <span class="button nextButton"></span>-->
+                        </div>
+                        </center>
+
+                        <script src="scripts/jquery-1.4.2.min.js"></script>
+
+                        <script>
+                            $(window).load(function () {
+                                var pages = $('#container li'), current = 0;
+                                var currentPage, nextPage;
+                                var timeoutID;
+                                var buttonClicked = 0;
+
+                                var handler1 = function () {
+                                    buttonClicked = 1;
+                                    $('#container .button').unbind('click');
+                                    currentPage = pages.eq(current);
+                                    if ($(this).hasClass('prevButton')) {
+                                        if (current <= 0)
+                                            current = pages.length - 1;
+                                        else
+                                            current = current - 1;
+                                    }
+                                    else {
+
+                                        if (current >= pages.length - 1)
+                                            current = 0;
+                                        else
+                                            current = current + 1;
+                                    }
+                                    nextPage = pages.eq(current);
+                                    currentPage.fadeTo('slow', 0.3, function () {
+                                        nextPage.fadeIn('slow', function () {
+                                            nextPage.css("opacity", 1);
+                                            currentPage.hide();
+                                            currentPage.css("opacity", 1);
+                                            $('#container .button').bind('click', handler1);
+                                        });
+                                    });
+                                }
+
+                                var handler2 = function () {
+                                    if (buttonClicked == 0) {
+                                        $('#container .button').unbind('click');
+                                        currentPage = pages.eq(current);
+                                        if (current >= pages.length - 1)
+                                            current = 0;
+                                        else
+                                            current = current + 1;
+                                        nextPage = pages.eq(current);
+                                        currentPage.fadeTo('slow', 0.3, function () {
+                                            nextPage.fadeIn('slow', function () {
+                                                nextPage.css("opacity", 1);
+                                                currentPage.hide();
+                                                currentPage.css("opacity", 1);
+                                                $('#container .button').bind('click', handler1);
+                                            });
+                                        });
+                                        timeoutID = setTimeout(function () {
+                                            handler2();
+                                        }, 4000);
+                                    }
+                                }
+
+                                //$('#container .button').click(function(){
+                                //	clearTimeout(timeoutID);
+                                //	handler1();
+                                //});
+
+                                timeoutID = setTimeout(function () {
+                                    handler2();
+                                }, 4000);
+
+                            });
+                        </script>
+                        <!--End of slider code!-->
+
+
+                        <p>
+                            With a variety of experiences in multiple industries, I am very good at online marketing, SEO (search engine optimization) and social media.
+                            I can create the winning online strategy for your business and execute it too.
+                            <br />
+                            <br />
+                            I understand well both the technical and human side of online marketing and SEO. This allows me to achieve excellent long-lasting results fast.
+                        </p>
+
+                        <h2>SEO</h2>
+
+                        I published a book on SEO: <a href="http://www.amazon.com/Ultimate-SEO-Become-Internet-Marketing-ebook/dp/B00H7AANFS">Ultimate SEO (Amazon)</a>, so I know (and can do) almost everything SEO-related :)
+                        <br />
+                        Sometimes I build sites just to run SEO experiments:
+                        <br />
+                        <a href="http://awesomephotography.xyz/">http://awesomephotography.xyz/</a>  >>>  more than 32000 pages indexed
+                        <br />
+                        <a href="http://it-training.xyz/">http://it-training.xyz/</a>  >>>  more than 35000 pages indexed
+                        <p></p>
+
+                        <h2>Analytics Applications:</h2>
+                        I like these two tools:
+                        <br />
+                        <a href="https://analytics.google.com/analytics/">Google Analytics</a>
+                        <br />
+                        <a href="http://piwik.org/">Piwik</a>
+
+                        <p></p>
+                        <h2>Marketing Automation</h2>
+                        When it comes to Marketing Automation, I used most of the tools on the market. Many companies tend to overdo it with the tools these days. It might create confusion, heavy learning process and distraction. The important thing is not to use the “best” tool, but to understand what data is needed & the desired outcome. Then we design the right process (sequence of events) and find the right application (or multiple applications that will work well together).
+                        <br />
+                        By the way, I recently wrote a brief <a href="http://vladislav.co/blog/the-age-of-marketing-automation/">article about marketing automation.</a>
+
+                        <p></p>
+                        <h2>Social Media</h2>
+                        I’m active on social media:
+                        <br />
+                        <a href="http://twitter.com/bestintlbiz">My Twitter:</a> 5400 high-quality followers
+                        <br />
+                        <a href="https://www.linkedin.com/in/golovin">My LinkedIn:</a>  4500 connections
+                        <br />
+                        <br />
+                        <strong>Social Media management tools I have experience with:</strong> 
+                        <br />
+                        <a href="https://hootsuite.com/">Hootsuite</a> 
+                        <br />
+                        <a href="http://www.socialquant.net/">Social Quant</a> 
+                        <br />
+                        <a href="http://www.socialbro.com/">SocialBro</a>
+                        <br />
+                        And many other tools.
+
+                        <p></p>
+                        <h2>Content Creation, Content Curation and Content Marketing</h2>
+                        I’m an advanced <a href="https://wordpress.org/">WordPress</a> developer and user (it's the most popular CMS - Content Management System).
+                        <br />
+                        Just for fun I publish 2 online newspapers: <a href="http://paper.li/f-1413907217">International Business Journal</a> and <a href="https://paper.li/e-1451751830">The Smarter You Daily</a> 
+                        <br />
+                        <br />
+                        <strong>These are some of the content curation tools I worked with:</strong>
+                        <br />
+                        <a href="http://curationsuite.com/">Curation Suite</a> 
+                        <br />
+                        <a href="http://paper.li/">paper.li</a> 
+                        <br />
+                        <a href="http://www.scoop.it/">Scoop.it!</a> 
+                        <br />
+                        And many other tools.
+
+                        <p></p>
+                        <h2>Email Marketing</h2>
+                        I worked with:
+                        <br />
+                        <a href="http://mailchimp.com/">MailChimp</a>     
+                        <br />
+                        <a href="http://www.aweber.com/">AWeber</a> 
+                        <br />
+                        And other tools.
+
+                        <p></p>
+                        <h2>CRM Systems</h2>
+                        I have quite extensive experience with:
+                        <br />
+                        <a href="http://www.salesforce.com/">Salesforce</a> 
+                        <br />
+                        <a href="https://www.pipelinersales.com/">Pipeliner</a> 
+                        <br />
+                        <a href="https://www.pipedrive.com/">Pipedrive</a> 
+
+                    </div>
+                </section>
+
+			</div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>&copy; Vladislav Golovin. All rights reserved.</li>
+                </ul>
+            </div>
+        </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64678384-1', 'auto');
+  ga('send', 'pageview');
+
+        </script>
+
+	</body>
+</html>
